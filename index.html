@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>لعبة المُنتحِل - Multiplayer</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#0f1220;
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      margin:0;
+      padding:16px;
+    }
+    .card{
+      width:100%;
+      max-width:720px;
+      background:#181c35;
+      padding:20px;
+      border-radius:16px;
+      box-shadow:0 0 30px rgba(0,0,0,.4);
+    }
+    h1,h2,h3{margin:0 0 10px}
+    p{margin:8px 0}
+    .small{opacity:.88;font-size:14px;line-height:1.6}
+    input,button,select{
+      width:100%;
+      padding:12px;
+      border-radius:10px;
+      border:none;
+      margin:8px 0;
+      font-size:16px;
+    }
+    input,select{background:#22275a;color:white}
+    button{
+      background:#5b7cfa;
+      color:#071024;
+      font-weight:bold;
+      cursor:pointer;
+    }
+    button.secondary{background:#333;color:white}
+    button.danger{background:#ff6d8a;color:#1b0010}
+    button:disabled{opacity:.55; cursor:not-allowed}
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+      font-size:13px;
+      opacity:.95;
+    }
+    .divider{height:1px;background:rgba(255,255,255,.12);margin:14px 0}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .row > *{flex:1; min-width:160px}
+    ul{margin:8px 0 0; padding-right:18px}
+    .tag{display:inline-block;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.09);margin-left:6px;font-size:13px}
+    .ok{color:#6dff9e;font-weight:bold}
+    .bad{color:#ff6d8a;font-weight:bold}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono","Courier New", monospace;}
+    .box{background:rgba(255,255,255,.06);padding:12px;border-radius:12px}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:560px){ .grid2{grid-template-columns:1fr;} }
+    .checklist label{display:flex;align-items:center;gap:10px;padding:10px;border-radius:10px;background:rgba(255,255,255,.05);margin:8px 0}
+    .checklist input{width:20px;height:20px;margin:0}
+  </style>
+</head>
+
+<body>
+  <div class="card" id="app"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
